@@ -59,7 +59,6 @@ namespace LS_FundParser
                 line = line.ToUpper().Trim();
                 line = line.Replace(",","");
                 line = line.Replace(" ","_");
-                line = line.Replace("&NBSP;","0");
                 if(line == "") {                    
                     detaillData = new List<string>();
                     data.Add(detaillData);   
@@ -95,11 +94,13 @@ namespace LS_FundParser
         }
 
         private string GetYear(string yearName){
+            if(yearName == "&NBSP;") return "1980";
             var year = yearName.Substring(yearName.Length - 4, 4);
             return year;
         }
 
         private string GetValue(string value){
+            if(value == "&NBSP;") return "0";
             value  = value.Replace("_","");
             value  = value.Replace(",",".");
             var groupAmount = value.Substring(value.Length - 1, 1);

@@ -1,0 +1,651 @@
+
+<!--FUNDAMENTAL-->
+<div id="modContentFundamental"></div>
+<div class="table-responsive">
+
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table table-condensed table-hover table-fundamental noborder nm">
+		<thead>
+			<tr>
+				<th align="left">
+					<select class="form-control input-xs" id="quarterFundamental">
+						<option value="">Auto</option>
+						<option value="1" >3 Month</option>
+						<option value="2" >6 Month</option>
+						<option value="3" >9 Month</option>
+						<option value="4" selected>12 Month</option>
+						<option value="5" >Every Quarter</option>
+					</select>
+				</th>
+				<th align="left"><button type="button" class="btn btn-default btn-xs-input" onClick="quickinfo_fundamental($('#stockInfoCode').val(),$('#quarterFundamental').val());">GO</button></th>
+				<th align="right">Anlz 2021</th>
+				<th align="right">[3M] 2021</th>
+				<th align="right">12M 2020</th>
+				<th align="right">12M 2019</th>
+				<th align="right">12M 2018</th>
+				<th align="right">12M 2017</th>
+				<th align="right">12M 2016</th>
+				<th align="right">12M 2015</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="2" align="left">Last Price</td>
+				<td align="right">2,440 </td>
+				<td align="right">2,440 </td>
+				<td align="right">2,730 </td>
+				<td align="right">2,670 </td>
+				<td align="right">1,575 </td>
+				<td align="right">1,810 </td>
+				<td align="right">2,570 </td>
+				<td align="right">2,400 </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Share Out</td>
+				<td align="right">14.2 B</td>
+				<td align="right">14.2 B</td>
+				<td align="right">14.2 B</td>
+				<td align="right">14.2 B</td>
+				<td align="right">14.6 B</td>
+				<td align="right">14.6 B</td>
+				<td align="right">14.6 B</td>
+				<td align="right">14.6 B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Market Cap</td>
+				<td align="right">34.8 T</td>
+				<td align="right">34.8 T</td>
+				<td align="right">38.9 T</td>
+				<td align="right">38.0 T</td>
+				<td align="right">22.9 T</td>
+				<td align="right">26.3 T</td>
+				<td align="right">37.4 T</td>
+				<td align="right">34.9 T</td>
+			</tr>
+			<tr>
+				<td colspan="10" align="left"><strong>BALANCE SHEET</strong></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Cash</td>
+				<td align="right">2.4 T</td>
+				<td align="right">2.4 T</td>
+				<td align="right">2.1 T</td>
+				<td align="right">1.1 T</td>
+				<td align="right">1.4 T</td>
+				<td align="right">1.7 T</td>
+				<td align="right">2.6 T</td>
+				<td align="right">2.4 T</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Total Asset</td>
+				<td align="right">6.9 T</td>
+				<td align="right">6.9 T</td>
+				<td align="right">6.4 T</td>
+				<td align="right">5.6 T</td>
+				<td align="right">5.1 T</td>
+				<td align="right">4.7 T</td>
+				<td align="right">4.2 T</td>
+				<td align="right">3.7 T</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">S.T.Borrowing</td>
+				<td align="right">654.0 B</td>
+				<td align="right">654.0 B</td>
+				<td align="right">568.4 B</td>
+				<td align="right">430.8 B</td>
+				<td align="right">311.9 B</td>
+				<td align="right">311.7 B</td>
+				<td align="right">255.1 B</td>
+				<td align="right">205.9 B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">L.T.Borrowing</td>
+				<td align="right">313.1 B</td>
+				<td align="right">313.1 B</td>
+				<td align="right">286.8 B</td>
+				<td align="right">352.7 B</td>
+				<td align="right">327.6 B</td>
+				<td align="right">369.8 B</td>
+				<td align="right">284.7 B</td>
+				<td align="right">235.0 B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Total Equity</td>
+				<td align="right">6.1 T</td>
+				<td align="right">5.9 T</td>
+				<td align="right">5.5 T</td>
+				<td align="right">4.8 T</td>
+				<td align="right">4.4 T</td>
+				<td align="right">4.0 T</td>
+				<td align="right">3.6 T</td>
+				<td align="right">3.3 T</td>
+			</tr>
+			<tr>
+				<td colspan="10" align="left"><strong>INCOME STATEMENT</strong></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Revenue</td>
+				<td align="right">4.8 T</td>
+				<td align="right">1.2 T</td>
+				<td align="right">3.4 T</td>
+				<td align="right">3.2 T</td>
+				<td align="right">2.7 T</td>
+				<td align="right">2.5 T</td>
+				<td align="right">2.4 T</td>
+				<td align="right">2.1 T</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Gross Profit</td>
+				<td align="right">2.6 T</td>
+				<td align="right">648.9 B</td>
+				<td align="right">1.7 T</td>
+				<td align="right">1.5 T</td>
+				<td align="right">1.3 T</td>
+				<td align="right">1.2 T</td>
+				<td align="right">1.2 T</td>
+				<td align="right">972.3 B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Operating Profit</td>
+				<td align="right">1.9 T</td>
+				<td align="right">468.2 B</td>
+				<td align="right">1.1 T</td>
+				<td align="right">942.6 B</td>
+				<td align="right">780.3 B</td>
+				<td align="right">759.8 B</td>
+				<td align="right">745.7 B</td>
+				<td align="right">604.9 B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Net.Profit</td>
+				<td align="right">1.3 T</td>
+				<td align="right">316.3 B</td>
+				<td align="right">841.7 B</td>
+				<td align="right">730.1 B</td>
+				<td align="right">613.6 B</td>
+				<td align="right">679.8 B</td>
+				<td align="right">695.4 B</td>
+				<td align="right">566.8 B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">EBITDA</td>
+				<td align="right">2.1 T</td>
+				<td align="right">516.4 B</td>
+				<td align="right">1.3 T</td>
+				<td align="right">1.1 T</td>
+				<td align="right">914.4 B</td>
+				<td align="right">872.8 B</td>
+				<td align="right">846.8 B</td>
+				<td align="right">696.3 B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Interest Expense</td>
+				<td align="right">12.3 B</td>
+				<td align="right">3.1 B</td>
+				<td align="right">11.5 B</td>
+				<td align="right">13.6 B</td>
+				<td align="right">14.9 B</td>
+				<td align="right">13.2 B</td>
+				<td align="right">12.1 B</td>
+				<td align="right">10.5 B</td>
+			</tr>
+			<tr>
+				<td colspan="10" align="left"><strong>RATIO</strong></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Deviden</td>
+				<td align="right">0.00 </td>
+				<td align="right">0.00 </td>
+				<td align="right">18.00 </td>
+				<td align="right">18.00 </td>
+				<td align="right">0.00 </td>
+				<td align="right">0.00 </td>
+				<td align="right">0.00 </td>
+				<td align="right">0.00 </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">EPS</td>
+				<td align="right">89.12 </td>
+				<td align="right">22.28 </td>
+				<td align="right">59.27 </td>
+				<td align="right">51.42 </td>
+				<td align="right">42.02 </td>
+				<td align="right">46.56 </td>
+				<td align="right">47.63 </td>
+				<td align="right">38.82 </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">PER</td>
+				<td align="right">27.38 x</td>
+				<td align="right">109.52 x</td>
+				<td align="right">46.06 x</td>
+				<td align="right">51.93 x</td>
+				<td align="right">37.48 x</td>
+				<td align="right">38.87 x</td>
+				<td align="right">53.96 x</td>
+				<td align="right">61.82 x</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">BVPS</td>
+				<td align="right">430.44 </td>
+				<td align="right">413.79 </td>
+				<td align="right">387.26 </td>
+				<td align="right">336.41 </td>
+				<td align="right">305.82 </td>
+				<td align="right">277.00 </td>
+				<td align="right">249.91 </td>
+				<td align="right">225.35 </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">PBV</td>
+				<td align="right">5.67 x</td>
+				<td align="right">5.90 x</td>
+				<td align="right">7.05 x</td>
+				<td align="right">7.94 x</td>
+				<td align="right">5.15 x</td>
+				<td align="right">6.53 x</td>
+				<td align="right">10.28 x</td>
+				<td align="right">10.65 x</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">ROA</td>
+				<td align="right">18.44 %</td>
+				<td align="right">4.61 %</td>
+				<td align="right">13.21 %</td>
+				<td align="right">13.09 %</td>
+				<td align="right">12.06 %</td>
+				<td align="right">14.43 %</td>
+				<td align="right">16.65 %</td>
+				<td align="right">15.24 %</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">ROE</td>
+				<td align="right">20.63 %</td>
+				<td align="right">5.37 %</td>
+				<td align="right">15.26 %</td>
+				<td align="right">15.23 %</td>
+				<td align="right">13.79 %</td>
+				<td align="right">16.87 %</td>
+				<td align="right">19.12 %</td>
+				<td align="right">17.29 %</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">EV/EBITDA</td>
+				<td align="right">16.15 </td>
+				<td align="right">64.60 </td>
+				<td align="right">29.11 </td>
+				<td align="right">34.17 </td>
+				<td align="right">24.18 </td>
+				<td align="right">28.99 </td>
+				<td align="right">41.78 </td>
+				<td align="right">47.36 </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Debt/Equity</td>
+				<td align="right">0.16 </td>
+				<td align="right">0.16 </td>
+				<td align="right">0.16 </td>
+				<td align="right">0.16 </td>
+				<td align="right">0.14 </td>
+				<td align="right">0.17 </td>
+				<td align="right">0.15 </td>
+				<td align="right">0.13 </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Debt/TotalCap</td>
+				<td align="right">0.14 </td>
+				<td align="right">0.14 </td>
+				<td align="right">0.13 </td>
+				<td align="right">0.14 </td>
+				<td align="right">0.13 </td>
+				<td align="right">0.14 </td>
+				<td align="right">0.13 </td>
+				<td align="right">0.12 </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Debt/EBITDA</td>
+				<td align="right">0.47 </td>
+				<td align="right">1.87 </td>
+				<td align="right">0.66 </td>
+				<td align="right">0.71 </td>
+				<td align="right">0.70 </td>
+				<td align="right">0.78 </td>
+				<td align="right">0.64 </td>
+				<td align="right">0.63 </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">EBITDA/IntExps</td>
+				<td align="right">168.02 </td>
+				<td align="right">168.02 </td>
+				<td align="right">112.64 </td>
+				<td align="right">81.16 </td>
+				<td align="right">61.35 </td>
+				<td align="right">66.06 </td>
+				<td align="right">69.73 </td>
+				<td align="right">66.40 </td>
+			</tr>
+		</tbody>
+	</table>
+
+
+<!--
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table table-condensed table-hover table-fundamental noborder nm">
+		<thead>
+			<tr>
+				<th align="left">
+					<select class="form-control input-xs">
+						<option selected>Auto</option>
+						<option>3 Month</option>
+						<option>6 Month</option>
+						<option>9 Month</option>
+						<option>12 Month</option>
+						<option>Every Quarter</option>
+					</select>
+				</th>
+				<th align="left"><button type="button" class="btn btn-default btn-xs-input">GO</button></th>
+				<th align="right">Anlz 2015</th>
+				<th align="right">[6M] 2015</th>
+				<th align="right">6M 2014</th>
+				<th align="right">6M 2013</th>
+				<th align="right">6M 2012</th>
+				<th align="right">6M 2011</th>
+				<th align="right">6M 2010</th>
+				<th align="right">6M 2009</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="2" align="left">Last Price</td>
+				<td align="right">2,735</td>
+				<td align="right">2,735</td>
+				<td align="right">2,465</td>
+				<td align="right">11,250</td>
+				<td align="right">8,150</td>
+				<td align="right">7,350</td>
+				<td align="right">7,700</td>
+				<td align="right">7,500</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Share Out</td>
+				<td align="right">100.8B</td>
+				<td align="right">100.8B</td>
+				<td align="right">100.8B</td>
+				<td align="right">20.2B</td>
+				<td align="right">20.2B</td>
+				<td align="right">20.2B</td>
+				<td align="right">20.2B</td>
+				<td align="right">20.2B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Market Cap</td>
+				<td align="right">275,688B</td>
+				<td align="right">275,688B</td>
+				<td align="right">248,472B</td>
+				<td align="right">226,800B</td>
+				<td align="right">164,304B</td>
+				<td align="right">148,176B</td>
+				<td align="right">155,232B</td>
+				<td align="right">151,200B</td>
+			</tr>
+			<tr>
+				<td colspan="10" align="left"><strong>BALANCE SHEET</strong></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Cash</td>
+				<td align="right">27,256B</td>
+				<td align="right">27,256B</td>
+				<td align="right">17,535B</td>
+				<td align="right">12,247B</td>
+				<td align="right">8,931B</td>
+				<td align="right">10,538B</td>
+				<td align="right">8,272B</td>
+				<td align="right">8,276B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Total Asset</td>
+				<td align="right">154,050B</td>
+				<td align="right">154,050B</td>
+				<td align="right">130,160B</td>
+				<td align="right">111,472B</td>
+				<td align="right">101,536B</td>
+				<td align="right">99,834B</td>
+				<td align="right">99,050B</td>
+				<td align="right">94,171B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">S.T.Borrowing</td>
+				<td align="right">6,919B</td>
+				<td align="right">6,919B</td>
+				<td align="right">4,494B</td>
+				<td align="right">5,661B</td>
+				<td align="right">4,697B</td>
+				<td align="right">70B</td>
+				<td align="right">6,760B</td>
+				<td align="right">6,755B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">L.T.Borrowing</td>
+				<td align="right">29,731B</td>
+				<td align="right">29,731B</td>
+				<td align="right">16,598B</td>
+				<td align="right">14,204B</td>
+				<td align="right">13,203B</td>
+				<td align="right">15,215B</td>
+				<td align="right">12,376B</td>
+				<td align="right">11,955B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Total Equity</td>
+				<td align="right">85,988B</td>
+				<td align="right">82,265B</td>
+				<td align="right">74,994B</td>
+				<td align="right">64,749B</td>
+				<td align="right">45,385B</td>
+				<td align="right">55,286B</td>
+				<td align="right">39,873B</td>
+				<td align="right">34,111B</td>
+			</tr>
+			<tr>
+				<td colspan="10" align="left"><strong>INCOME STATEMENT</strong></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Revenue</td>
+				<td align="right">97,680B</td>
+				<td align="right">48,840B</td>
+				<td align="right">43,542B</td>
+				<td align="right">40,160B</td>
+				<td align="right">37,099B</td>
+				<td align="right">34,457B</td>
+				<td align="right">34,243B</td>
+				<td align="right">30,673B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Gross Profit</td>
+				<td align="right">0</td>
+				<td align="right">0</td>
+				<td align="right">0</td>
+				<td align="right">0</td>
+				<td align="right">0</td>
+				<td align="right">0</td>
+				<td align="right">0</td>
+				<td align="right">0</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Operating Profit</td>
+				<td align="right">30,246B</td>
+				<td align="right">15,123B</td>
+				<td align="right">14,193B</td>
+				<td align="right">13,846B</td>
+				<td align="right">18,306B</td>
+				<td align="right">10,922B</td>
+				<td align="right">11,360B</td>
+				<td align="right">11,577B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Net.Profit</td>
+				<td align="right">14,894B</td>
+				<td align="right">7,447B</td>
+				<td align="right">7,411B</td>
+				<td align="right">7,125B</td>
+				<td align="right">6,428B</td>
+				<td align="right">5,940B</td>
+				<td align="right">6,003B</td>
+				<td align="right">6,044B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">EBITDA</td>
+				<td align="right">47,832B</td>
+				<td align="right">23,916B</td>
+				<td align="right">22,356B</td>
+				<td align="right">20,786B</td>
+				<td align="right">11,339B</td>
+				<td align="right">18,073B</td>
+				<td align="right">18,782B</td>
+				<td align="right">17,626B</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Interest Expense</td>
+				<td align="right">2,008B</td>
+				<td align="right">1,004B</td>
+				<td align="right">863B</td>
+				<td align="right">696B</td>
+				<td align="right">565B</td>
+				<td align="right">819B</td>
+				<td align="right">958B</td>
+				<td align="right">938B</td>
+			</tr>
+			<tr>
+				<td colspan="10" align="left"><strong>RATIO</strong></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">EPS</td>
+				<td align="right">147.76</td>
+				<td align="right">73.88</td>
+				<td align="right">73.52</td>
+				<td align="right">70.68</td>
+				<td align="right">333.97</td>
+				<td align="right">302.05</td>
+				<td align="right">305.21</td>
+				<td align="right">307.27</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">PER</td>
+				<td align="right">18.51x</td>
+				<td align="right">37.02x</td>
+				<td align="right">33.53x</td>
+				<td align="right">159.17x</td>
+				<td align="right">24.40x</td>
+				<td align="right">24.33x</td>
+				<td align="right">25.23x</td>
+				<td align="right">24.41x</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">BVPS</td>
+				<td align="right">853.06</td>
+				<td align="right">816.12</td>
+				<td align="right">743.99</td>
+				<td align="right">3,211.76</td>
+				<td align="right">2,251.24</td>
+				<td align="right">2,742.35</td>
+				<td align="right">1,977.84</td>
+				<td align="right">1,692.00</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">PBV</td>
+				<td align="right">3.21x</td>
+				<td align="right">3.35x</td>
+				<td align="right">3.31x</td>
+				<td align="right">3.50x</td>
+				<td align="right">3.62x</td>
+				<td align="right">2.68x</td>
+				<td align="right">3.89x</td>
+				<td align="right">4.43x</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">ROA</td>
+				<td align="right">9.67%</td>
+				<td align="right">4.83%</td>
+				<td align="right">5.69%</td>
+				<td align="right">6.39%</td>
+				<td align="right">6.33%</td>
+				<td align="right">5.95%</td>
+				<td align="right">6.06%</td>
+				<td align="right">6.42%</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">ROE</td>
+				<td align="right">17.32%</td>
+				<td align="right">9.05%</td>
+				<td align="right">9.88%</td>
+				<td align="right">11.00%</td>
+				<td align="right">14.16%</td>
+				<td align="right">10.74%</td>
+				<td align="right">15.06%</td>
+				<td align="right">17.72%</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">EV/EBITDA</td>
+				<td align="right">5.96</td>
+				<td align="right">11.92</td>
+				<td align="right">11.27</td>
+				<td align="right">11.28</td>
+				<td align="right">15.28</td>
+				<td align="right">8.46</td>
+				<td align="right">8.84</td>
+				<td align="right">9.17</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Debt/Equity</td>
+				<td align="right">0.43</td>
+				<td align="right">0.45</td>
+				<td align="right">0.28</td>
+				<td align="right">0.31</td>
+				<td align="right">0.39</td>
+				<td align="right">0.28</td>
+				<td align="right">0.48</td>
+				<td align="right">0.55</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Debt/TotalCap</td>
+				<td align="right">0.30</td>
+				<td align="right">0.31</td>
+				<td align="right">0.22</td>
+				<td align="right">0.23</td>
+				<td align="right">0.28</td>
+				<td align="right">0.22</td>
+				<td align="right">0.32</td>
+				<td align="right">0.35</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">Debt/EBITDA</td>
+				<td align="right">0.77</td>
+				<td align="right">1.53</td>
+				<td align="right">0.94</td>
+				<td align="right">0.96</td>
+				<td align="right">1.58</td>
+				<td align="right">0.85</td>
+				<td align="right">1.02</td>
+				<td align="right">1.06</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">EBITDA/IntExps</td>
+				<td align="right">23.82</td>
+				<td align="right">23.82</td>
+				<td align="right">25.90</td>
+				<td align="right">29.86</td>
+				<td align="right">20.07</td>
+				<td align="right">22.07</td>
+				<td align="right">19.61</td>
+				<td align="right">18.79</td>
+			</tr>
+		</tbody>
+	</table>
+	-->
+</div>	
+
+
+
+
+<!-- =======================
+======SCRIPT MODULE=========
+============================-->
+<script src="../../../../module/saham/include/js/fundamental.js"></script>
