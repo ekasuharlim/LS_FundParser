@@ -11,7 +11,7 @@ namespace LS_FundParser
     {
         public string Parse(string inputFile,string stockCode, IDataStorage outputStorage){
             var reader = new StreamReader(inputFile);
-            var tempFile = $"{stockCode}.temp";
+            var tempFile = $@"Temp\{stockCode}.temp";
             var writer = new StreamWriter(tempFile);
             var line = reader.ReadLine();
             var skip  = true;
@@ -44,6 +44,7 @@ namespace LS_FundParser
             writer.Close();
             
             var data =  ParseTempResult(tempFile);
+            File.Delete(tempFile);
             InsertDataToDb(outputStorage,stockCode,data);
 
             return inputFile;
@@ -58,6 +59,7 @@ namespace LS_FundParser
                 line = line.ToUpper().Trim();
                 line = line.Replace(",","");
                 line = line.Replace(" ","_");
+                line = line.Replace("&NBSP;","0");
                 if(line == "") {                    
                     detaillData = new List<string>();
                     data.Add(detaillData);   

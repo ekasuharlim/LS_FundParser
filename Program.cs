@@ -24,7 +24,7 @@ namespace LS_FundParser
                     Console.WriteLine(rawData);
                     retriever.SavePage($"https://www.indopremier.com/module/saham/include/fundamental.php?code={code}&quarter=4",rawData);
                     parser.Parse(rawData,code,fs);
-                    Thread.Sleep(2);
+                    Thread.Sleep(5);
                 }   
                 code = reader.ReadLine();
             }
